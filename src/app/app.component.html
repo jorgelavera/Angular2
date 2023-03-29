@@ -1,0 +1,18 @@
+<div
+  [ngClass]="{ success: isLoading, error: !isLoading }"
+  [ngStyle]="{ 'font-size': isLoading ? '1em' : '1.5em' }"
+>
+  {{ isLoading ? "Please wait, loading..." : "Error while loading" }}
+</div>
+
+<ul>
+  <li *ngFor="let alumno of alumnos">
+    {{ alumno | uppercase }}
+  </li>
+</ul>
+
+<p appFicha>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque, rerum
+  odio hic nemo nisi accusantium commodi esse, placeat cupiditate nam ducimus
+  quisquam reprehenderit. Doloribus voluptatibus id esse voluptatum quos.
+</p>
